@@ -1,8 +1,0 @@
-
-C:\xampp\htdocs\e-laundry>git add .
-
-C:\xampp\htdocs\e-laundry>git commit -m "merubah about line 10"
-[master c0cb9f9] merubah about line 10
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-C:\xampp\htdocs\e-laundry>

@@ -112,7 +112,7 @@
               <div class="col-sm-6">
 
                 <div class="footer-info">
-                  <h3>E-Laudry</h3>
+                  <h3>E-Laundry</h3>
                   <p>9/10 pelanggan laundry pernah kehilangan pakaian pada layanan laundry? jangan tunggu sampai pakaian kesayangan Anda hilang, tertukar atau rusak! Dengan layanan kami, Anda bisa tenang dan santai sepenuhnya!<br>Pesan sekarang dan kami akan melayani Anda sekarang juga!</p>
                 </div>
 

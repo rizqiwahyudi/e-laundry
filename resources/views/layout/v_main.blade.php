@@ -66,9 +66,9 @@
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -84,7 +84,7 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#footer">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
@@ -204,15 +204,6 @@
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>SakeraDev.id</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- #footer -->

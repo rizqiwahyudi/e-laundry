@@ -42,11 +42,11 @@
             <h2>About Us</h2>
             <h3>Assalamualikum.Wr.Wb</h3>
             <p>Buat masyarakat sumenep Khususnya kecamatan kota nih ,yang lagi banyak kesibukan atau lagi males keluar pas musim hujan kayak gini.</p>
-            <p>Kami dari Loundry Sehati di Jl.Kartini No.33A Pangaragan-Sumenep menyidakan jasa Antar-Jemput GRATIS Area kota sumenep . Buruan tinggal WA atau tlp saja di 082330263968.Serta kami juga menyediakan 3 jenis parfum sesuai selera anda. terimakasi</p>
+            <p>Kami dari Laundry Sehati di Jl.Kartini No.33A Pangarangan-Sumenep menyidakan jasa Antar-Jemput GRATIS Area kota Sumenep. Buruan tinggal WA atau tlp saja di 082330263968. Serta kami juga menyediakan 3 jenis parfum sesuai selera anda. Terimakasi</p>
             <ul>
               <li><i class="ion-android-checkmark-circle"></i> Garansi 100% Cuci dan Setrika Ulang.</li>
               <li><i class="ion-android-checkmark-circle"></i> Satu Hari Selesai.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Pilih Pewangi Sesuai Selerah.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Pilih Pewangi Sesuai Selera.</li>
               <li><i class="ion-android-checkmark-circle"></i> Pencucian Tidak Digabung.</li>
               <li><i class="ion-android-checkmark-circle"></i> Gratis Ongkos Kirim Untuk Wilayah Kota.</li>
             </ul>
@@ -201,20 +201,6 @@
   <--========================== 
           Call To Action Section
         ============================-->
-  <section id="call-to-action" class="wow fadeInUp">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 text-center text-lg-left">
-          <h3 class="cta-title">Call To Action</h3>
-          <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="#">Call To Action</a>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- #call-to-action -->
 
   <!--==========================
           Features Section
@@ -481,91 +467,6 @@
   <!--==========================
           Team Section
         ============================-->
-  <section id="team" class="section-bg">
-    <div class="container">
-      <div class="section-header">
-        <h3>Team</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="{{ asset('/assets/img/team-1.jpg') }}" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="member">
-            <img src="{{ asset('/assets/img/team-2.jpg') }}" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-          <div class="member">
-            <img src="{{ asset('/assets/img/team-3.jpg') }}" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="member">
-            <img src="{{ asset('/assets/img/team-4.jpg') }}" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- #team -->
 
   <!--==========================
           Clients Section

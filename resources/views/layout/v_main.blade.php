@@ -9,8 +9,8 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="{{ asset('/assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('/assets/img/logo-laundry.png') }}" rel="icon">
+  <link href="{{ asset('/assets/img/logo-laundry.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
@@ -130,8 +130,8 @@
                 <div class="footer-links">
                   <h4>Useful Links</h4>
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="#intro" class="scrollto">Home</a></li>
+                    <li><a href="#about" class="scrollto">About us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Terms of service</a></li>
                     <li><a href="#">Privacy policy</a></li>
@@ -145,7 +145,7 @@
                     Sumenep, Jawa Timur<br>
                     Indonesia <br>
                     <strong>Phone:</strong> +62 8320 3026 3968<br>
-                    <strong>Email:</strong> laundrysehati@gmsil.com<br>
+                    <strong>Email:</strong> laundrysehati@gmail.com<br>
                   </p>
                 </div>
 

@@ -1,6 +1,6 @@
 @extends('layout.v_main')
 
-@section('title', 'Home Page')
+@section('title', 'Home Page | Laundry Sehati')
 
 @section('content')
 <section id="intro" class="clearfix">

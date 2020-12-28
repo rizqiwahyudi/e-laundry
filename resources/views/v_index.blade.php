@@ -415,46 +415,16 @@
 
           <div class="owl-carousel testimonials-carousel wow fadeInUp">
 
-            <div class="testimonial-item">
-              <h3>M.Nasirul Umam</h3>
-              <h4>Developer</h4>
-              <p>
-                Kami Selalu Menganalisa Setiap Masalah dengan Detail Dan Teliti.
-              </p>
-            </div>
+            @foreach( $comments as $komen )
 
             <div class="testimonial-item">
-              <h3>Rizqi Wahyudi</h3>
+              <h3>{{ $komen->nama }}</h3>
               <h4>Progremer</h4>
-              <p>
-                Setiap Problem Yang Sudah Selesai Ditangani Akan Kami Cek Ulang Untuk Memastikan Tidak Ada Masalah.
-              </p>
+              <p>{{ $komen->komen }}</p>
             </div>
 
-            <div class="testimonial-item">
-              <h3>Fina</h3>
-              <h4>Store Owner</h4>
-              <p>
-                Kami Selalu Support by on call serta datang langsung ke tempat anda bila terjadi problem yang tidak terselesaikan.
-              </p>
-            </div>
-
-            <div class="testimonial-item">
-              <h3>Syarifatus Sab'ah</h3>
-              <h4>Freelancer</h4>
-              <p>
-                Kami Selalu Menangani Masalah Dengan Cepat Dan Solusi Yang Tepat.
-              </p>
-            </div>
-
-            <div class="testimonial-item">
-              <h3>Syarif Hidayatullah</h3>
-              <h4>Desainer</h4>
-              <p>
-                Pelayanan kami datang kunjungan ke tempat anda, dengan senag hati.
-              </p>
-            </div>
-
+            @endforeach
+            
           </div>
 
         </div>

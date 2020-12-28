@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('v_index');
-});
+// Route::get('/', function () {
+//     return view('v_index');
+// });
+
+Route::get('/', 'CommentController@index');

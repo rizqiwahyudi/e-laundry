@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('v_index');
 // });
 
-Route::get('/', 'CommentController@index');
+Route::get('/', 'HomeController@index');

@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('v_index');
 // });
-
+Route::get('/', 'PagesController@home');
 Route::get('/', 'CommentController@index');

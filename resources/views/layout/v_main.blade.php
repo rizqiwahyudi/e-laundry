@@ -67,7 +67,6 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#clients">Clients</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -86,6 +85,7 @@
             </ul>
           </li> -->
           <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#login">Login</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -166,7 +166,7 @@
 
             <div class="form">
 
-              <h4>Send us a message</h4>
+              <h4>Penilaian Jasa Kami</h4>
               <form action="" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

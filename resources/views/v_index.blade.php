@@ -470,7 +470,7 @@
 
   <!--==========================
           Clients Section
-        ============================-->
+        ============================
   <section id="clients" class="wow fadeInUp">
     <div class="container">
 

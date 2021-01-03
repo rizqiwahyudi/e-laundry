@@ -441,7 +441,7 @@
   <!--==========================
           Clients Section
         ============================-->
-  <section id="clients" class="wow fadeInUp">
+  <!-- <section id="clients" class="wow fadeInUp">
     <div class="container">
 
       <header class="section-header">
@@ -460,7 +460,7 @@
       </div>
 
     </div>
-  </section><!-- #clients -->
+  </section> --><!-- #clients -->
 
 
   <!--==========================

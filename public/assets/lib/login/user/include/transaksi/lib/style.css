@@ -1,0 +1,45 @@
+body ul{list-style: none;}
+table{
+	text-align: left;
+	border: 0px;
+	width: 100%;
+}
+table tr{
+	margin-bottom: 3px;
+	cursor: default;
+}
+table.arsip-hover tr:hover{
+	background-color: #cacaff
+}
+table td{
+	max-width: 200px;
+	overflow: hidden;
+	padding: 2px;
+}
+.kotak{
+	height: 400px;
+	overflow: scroll;
+	display: block;
+	border:1px solid #999;
+}
+.arsip, .cetak{
+	font-size: 12pt;
+	color:#0084f3;
+}
+a:hover{
+	text-decoration: none;
+}
+.tbl{
+	display: block;
+	height: 50px;
+	line-height: 25px;
+	vertical-align: middle;
+	font-size: 25px;
+	color: white;
+	background-color: #229d15;
+	margin-bottom: 5px;
+}
+.tbl:hover{
+	color: white;
+	background-color: #208618;
+}

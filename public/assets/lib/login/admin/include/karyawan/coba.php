@@ -1,0 +1,1 @@
+SELECT * FROM karyawan left join transaksi on karyawan.no_nota = transaksi.no_nota BETWEEN transaksi.id_karyawan and transaksi.berat"

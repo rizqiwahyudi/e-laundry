@@ -10,4 +10,8 @@ class PagesController extends Controller
     {
     	return view('v_index');
     }
+    public function login()
+    {
+    	return view('v_login');
+    }
 }

@@ -27,13 +27,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: Rapid
-    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+  <link href="{{ asset('/assets/css/rating-input.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -67,7 +61,7 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#clients">Clients</a></li>
+          <li><a href="#footer">Contact Us</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -85,7 +79,7 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> -->
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="{{ url('/login') }}" class="btn btn-outline-secondary">Login</a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -115,15 +109,6 @@
                   <h3>E-Laundry</h3>
                   <p>9/10 pelanggan laundry pernah kehilangan pakaian pada layanan laundry? jangan tunggu sampai pakaian kesayangan Anda hilang, tertukar atau rusak! Dengan layanan kami, Anda bisa tenang dan santai sepenuhnya!<br>Pesan sekarang dan kami akan melayani Anda sekarang juga!</p>
                 </div>
-
-                <div class="footer-newsletter">
-                  <h4>Our Newsletter</h4>
-                  <p>Tenang bersama kami dan miliki waktu lebih untuk keluarga, hobi dan teman Anda!.</p>
-                  <form action="" method="post">
-                    <input type="email" name="email"><input type="submit" value="Subscribe">
-                  </form>
-                </div>
-
               </div>
 
               <div class="col-sm-6">
@@ -132,7 +117,7 @@
                   <ul>
                     <li><a href="#intro" class="scrollto">Home</a></li>
                     <li><a href="#about" class="scrollto">About us</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#services" class="scrollto">Services</a></li>
                     <li><a href="#">Terms of service</a></li>
                     <li><a href="#">Privacy policy</a></li>
                   </ul>
@@ -165,9 +150,8 @@
           <div class="col-lg-6">
 
             <div class="form">
-
-              <h4>Send us a message</h4>
-              <form action="" method="post" role="form" class="contactForm">
+              <h4>Penilaian Jasa Kami</h4>
+              <form action="/create" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>
@@ -177,33 +161,37 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
+                    <div class="stars">
+                        <input class="star star-5" id="star-5" type="radio" name="star" value="5" />
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star" value="4"/>
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star" value="3"/>
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star" value="2"/>
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star" value="5"/>
+                        <label class="star star-1" for="star-1"></label>
+                    </div>
+                    <div class="validation"></div>
                 </div>
                 <div class="form-group">
                   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
                 </div>
 
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                <div class="text-center">
+                  <button type="submit" title="Send Message">Send Message</button>
+                </div>
               </form>
             </div>
-
           </div>
-
-
-
         </div>
-
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>SakeraDev.id</strong>. All Rights Reserved
+        &copy; Copyright <strong>SakeraDev.ID</strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- #footer -->
@@ -217,6 +205,7 @@
   <script src="{{ asset('/assets/lib/jquery/jquery.min.js') }}"></script>
   <script src="{{ asset('/assets/lib/jquery/jquery-migrate.min.js') }}"></script>
   <script src="{{ asset('/assets/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('/assets/lib/bootstrap/js/bootstrap.min.js') }}"></script>
   <script src="{{ asset('/assets/lib/easing/easing.min.js') }}"></script>
   <script src="{{ asset('/assets/lib/mobile-nav/mobile-nav.js') }}"></script>
   <script src="{{ asset('/assets/lib/wow/wow.min.js') }}"></script>

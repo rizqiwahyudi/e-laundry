@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('v_index');
 // });
 Route::get('/', 'PagesController@home');
+Route::get('/login', 'PagesController@login');
 Route::get('/', 'CommentController@index');
+Route::post('/tambah', 'CommentController@store');

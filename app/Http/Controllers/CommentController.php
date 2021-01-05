@@ -15,8 +15,8 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $comment = Comment::all();
-        return view('v_index', ['comments' => $comment]);
+        $comments = Comment::all();
+        return view('v_index', compact('comments'));
     }
 
     /**
@@ -37,16 +37,8 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        // $comment = Comment::create([
-        //     'nama' => $request->name,
-        //     'email' => $request->email,
-        //     'rating' => $request->star,
-        //     'komen' => $request->message
-        // ]);
-
-        // return redirect('v_index');
-        $data = $request->all();
-        $todo = Comment::create($data);
+        Comment::create($request->all());
+        return redirect('/');
     }
 
     /**

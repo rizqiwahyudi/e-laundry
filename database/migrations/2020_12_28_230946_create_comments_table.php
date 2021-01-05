@@ -18,7 +18,7 @@ class CreateCommentsTable extends Migration
             $table->string('nama', 50);
             $table->string('email', 50)->unique();
             $table->integer('rating');
-            $table->string('komen', 255)->nullable();
+            $table->string('komen', 255);
             $table->timestamps();
         });
     }

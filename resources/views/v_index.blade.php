@@ -419,7 +419,7 @@
 
             <div class="testimonial-item">
               <h3>{{ $komen->nama }}</h3>
-              <h4>Progremer</h4>
+              <h4>{{ $komen->rating }}</h4>
               <p>{{ $komen->komen }}</p>
             </div>
 

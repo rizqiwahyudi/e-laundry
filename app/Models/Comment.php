@@ -11,5 +11,10 @@ class Comment extends Model
 
     protected $table = 'comments';
     protected $primarykey = 'id_comment';
-    protected $fillable = ['nama', 'email', 'rating', 'komen'];
+    protected $fillable = [
+    	'nama', 
+    	'email', 
+    	'rating', 
+    	'komen'
+    ];
 }

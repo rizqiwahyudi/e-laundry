@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>@yield('title')</title>
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -151,33 +152,40 @@
 
             <div class="form">
               <h4>Penilaian Jasa Kami</h4>
-              <form action="/create" method="post" role="form" class="contactForm">
+              <form action="{{ url('/') }}" method="post" role="form" class="contactForm">
+                @csrf
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required="" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required="" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
                     <div class="stars">
-                        <input class="star star-5" id="star-5" type="radio" name="star" value="5" />
-                        <label class="star star-5" for="star-5"></label>
-                        <input class="star star-4" id="star-4" type="radio" name="star" value="4"/>
+                      @for ($i = 5; $i > 0; $i--)
+                        <input class="star star-{{ $i }} form-control" id="star-{{ $i }}" type="radio" name="rating" value="{{ $i }}" data-rule="required" data-msg="Please enter your rating" required="" />
+                        <label class="star star-{{ $i }}" for="star-{{ $i }}"></label>
+                      @endfor
+                        <!-- <input class="star star-4" id="star-4" type="radio" name="star" value="4" data-rule="required"/>
                         <label class="star star-4" for="star-4"></label>
-                        <input class="star star-3" id="star-3" type="radio" name="star" value="3"/>
+                        <input class="star star-3" id="star-3" type="radio" name="star" value="3" data-rule="required"/>
                         <label class="star star-3" for="star-3"></label>
-                        <input class="star star-2" id="star-2" type="radio" name="star" value="2"/>
+                        <input class="star star-2" id="star-2" type="radio" name="star" value="2" data-rule="required"/>
                         <label class="star star-2" for="star-2"></label>
-                        <input class="star star-1" id="star-1" type="radio" name="star" value="5"/>
-                        <label class="star star-1" for="star-1"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star" value="1" data-rule="required"/>
+                        <label class="star star-1" for="star-1"></label> -->
+                        <div class="validation"></div>
                     </div>
-                    <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="komen" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required=""></textarea>
                 </div>
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
 
                 <div class="text-center">
                   <button type="submit" title="Send Message">Send Message</button>
@@ -185,6 +193,7 @@
               </form>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -215,7 +224,7 @@
   <script src="{{ asset('/assets/lib/isotope/isotope.pkgd.min.js') }}"></script>
   <script src="{{ asset('/assets/lib/lightbox/js/lightbox.min.js') }}"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="{{ asset('/assets/contactform/contactform.js') }}"></script>
+  <!-- <script src="{{ asset('/assets/contactform/contactform.js') }}"></script> -->
 
   <!-- Template Main Javascript File -->
   <script src="{{ asset('/assets/js/main.js') }}"></script>

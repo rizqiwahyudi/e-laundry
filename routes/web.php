@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@home');
 Route::get('/login', 'PagesController@login');
 Route::get('/', 'CommentController@index');
-Route::post('/tambah', 'CommentController@store');
+Route::post('/', 'CommentController@store');

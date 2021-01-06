@@ -20,6 +20,7 @@
   <link href="{{ asset('/assets/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
+  <link href="{{ asset('/assets/lib/font-awesome2/css/all.css') }}" rel="stylesheet">
   <link href="{{ asset('/assets/lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
   <link href="{{ asset('/assets/lib/animate/animate.min.css') }}" rel="stylesheet">
   <link href="{{ asset('/assets/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
@@ -211,6 +212,7 @@
 
   <!-- JavaScript Libraries -->
   <!-- TOLONG JANGAN DI EDIT - EDIT YANG DIBAWAH INI YAA -->
+  <script src="{{ asset('/assets/lib/font-awesome2/all.js') }}"></script>
   <script src="{{ asset('/assets/lib/jquery/jquery.min.js') }}"></script>
   <script src="{{ asset('/assets/lib/jquery/jquery-migrate.min.js') }}"></script>
   <script src="{{ asset('/assets/lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

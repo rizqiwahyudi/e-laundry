@@ -419,7 +419,18 @@
 
             <div class="testimonial-item">
               <h3>{{ $komen->nama }}</h3>
-              <h4>{{ $komen->rating }}</h4>
+              <h4>
+                @foreach(range(1,5) as $i)
+                  <span class="fa-stack" style="width:1em letter-spacing: 4px;">
+                    <i class="far fa-2x fa-star fa-stack-2x"></i>
+                    
+                    @if($komen->rating > 0)
+                      <i class="fas fa-2x fa-star fa-stack-2x text-warning"></i>
+                    @endif
+                    @php $komen->rating --; @endphp
+                  </span>
+                @endforeach
+              </h4>
               <p>{{ $komen->komen }}</p>
             </div>
 

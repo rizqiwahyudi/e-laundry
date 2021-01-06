@@ -156,17 +156,21 @@
               <form action="{{ url('/') }}" method="post" role="form" class="contactForm">
                 @csrf
                 <div class="form-group">
-                  <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required="" />
-                  <div class="validation"></div>
+                  <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required="" value="{{old('nama')}}" />
+                  @if($errors->has('nama'))
+                    <span class="text-danger">{{ $errors->first('nama') }}</span>
+                  @endif
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required="" />
-                  <div class="validation"></div>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required="" value="{{old('email')}}" />
+                  @if($errors->has('email'))
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                  @endif
                 </div>
                 <div class="form-group">
                     <div class="stars">
                       @for ($i = 5; $i > 0; $i--)
-                        <input class="star star-{{ $i }} form-control" id="star-{{ $i }}" type="radio" name="rating" value="{{ $i }}" data-rule="required" data-msg="Please enter your rating" required="" />
+                        <input class="star star-{{ $i }} form-control" id="star-{{ $i }}" type="radio" name="rating" value="{{ $i }}" data-rule="required" data-msg="Please enter your rating" required=""/>
                         <label class="star star-{{ $i }}" for="star-{{ $i }}"></label>
                       @endfor
                         <!-- <input class="star star-4" id="star-4" type="radio" name="star" value="4" data-rule="required"/>
@@ -177,16 +181,29 @@
                         <label class="star star-2" for="star-2"></label>
                         <input class="star star-1" id="star-1" type="radio" name="star" value="1" data-rule="required"/>
                         <label class="star star-1" for="star-1"></label> -->
-                        <div class="validation"></div>
+                        @if($errors->has('rating'))
+                          <span class="text-danger">{{ $errors->first('rating') }}</span>
+                        @endif
                     </div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="komen" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="komen" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required="">{{old('komen')}}</textarea>
+                  @if($errors->has('komen'))
+                    <span class="text-danger">{{ $errors->first('komen') }}</span>
+                  @endif
                 </div>
 
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
+                @if(Session::has('success'))
+                  <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Success!!</strong> {{ Session::get('success') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    @php
+                      Session::forget('success');
+                    @endphp
+                  </div>
+                @endif
 
                 <div class="text-center">
                   <button type="submit" title="Send Message">Send Message</button>

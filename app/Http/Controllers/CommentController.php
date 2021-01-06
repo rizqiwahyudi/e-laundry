@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Comment;
+use Validator;
 
 class CommentController extends Controller
 {
@@ -37,8 +38,15 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nama' => 'required|string|min:4',
+            'email' => 'required|email|unique:comments',
+            'rating' => 'required|numeric|min:1|max:5',
+            'komen' => 'required'
+        ]);
+
         Comment::create($request->all());
-        return redirect('/');
+        return back()->with('success', 'Your message has been sent. Thank you!');
     }
 
     /**

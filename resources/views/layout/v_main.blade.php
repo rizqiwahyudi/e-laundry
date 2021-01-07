@@ -30,6 +30,7 @@
   <!-- Main Stylesheet File -->
   <link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet">
   <link href="{{ asset('/assets/css/rating-input.css') }}" rel="stylesheet">
+  <script src="{{ asset('/assets/js/sweetalert.js') }}"></script>
 </head>
 
 <body>
@@ -156,15 +157,27 @@
               <form action="{{ url('/') }}" method="post" role="form" class="contactForm">
                 @csrf
                 <div class="form-group">
-                  <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required="" value="{{old('nama')}}" />
+                  <input type="text" name="nama" class="form-control" id="name" placeholder="Masukkan Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required="" value="{{old('nama')}}" />
                   @if($errors->has('nama'))
-                    <span class="text-danger">{{ $errors->first('nama') }}</span>
+                    <script type="text/javascript">
+                      Swal.fire(
+                        'Error !',
+                        '{{ $errors->first("nama") }}',
+                        'error'
+                      )
+                    </script>
                   @endif
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required="" value="{{old('email')}}" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Masukkan Email" data-rule="email" data-msg="Please enter a valid email" required="" value="{{old('email')}}" />
                   @if($errors->has('email'))
-                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                    <script type="text/javascript">
+                      Swal.fire(
+                        'Error !',
+                        '{{ $errors->first("email") }}',
+                        'error'
+                      )
+                    </script>
                   @endif
                 </div>
                 <div class="form-group">
@@ -182,23 +195,38 @@
                         <input class="star star-1" id="star-1" type="radio" name="star" value="1" data-rule="required"/>
                         <label class="star star-1" for="star-1"></label> -->
                         @if($errors->has('rating'))
-                          <span class="text-danger">{{ $errors->first('rating') }}</span>
+                          <script type="text/javascript">
+                            Swal.fire(
+                              'Error !',
+                              '{{ $errors->first("rating") }}',
+                              'error'
+                            )
+                          </script>
                         @endif
                     </div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="komen" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required="">{{old('komen')}}</textarea>
+                  <textarea class="form-control" name="komen" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Masukkan Comment atau Pesan" required="">{{old('komen')}}</textarea>
                   @if($errors->has('komen'))
-                    <span class="text-danger">{{ $errors->first('komen') }}</span>
+                    <script type="text/javascript">
+                      Swal.fire(
+                        'Error !',
+                        '{{ $errors->first("komen") }}',
+                        'error'
+                      )
+                    </script>
                   @endif
                 </div>
 
                 @if(Session::has('success'))
-                  <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Success!!</strong> {{ Session::get('success') }}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    
+                    <script type="text/javascript">
+                      Swal.fire(
+                        'Success!!',
+                        '{{ Session::get("success") }}',
+                        'success'
+                      )
+                    </script>
                     @php
                       Session::forget('success');
                     @endphp

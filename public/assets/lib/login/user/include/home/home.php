@@ -18,7 +18,7 @@
 
 <?php include 'koneksi.php'; ?>
 
-<?php 
+<?php
 $sql = mysqli_query($conn, "SELECT id_transaksi FROM transaksi");
 $count = mysqli_num_rows($sql);
 $hari = date('Y-m-d');
@@ -32,31 +32,23 @@ $countHari = mysqli_num_rows($perhari);
   <div class="row">
     <div class="col-md-3">
       <div class="panel panel-border panel-primary">
-        <div class="panel-heading"> 
-          <h3 class="panel-title"><i class="fa fa-home"></i> Transaksi Hari Ini</h3> 
-        </div> 
-        <div class="panel-body"> 
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-home"></i> Transaksi Hari Ini</h3>
+        </div>
+        <div class="panel-body">
           <h2><?= $countHari ?></h2>
-        </div> 
+        </div>
       </div>
     </div>
     <div class="col-md-3">
       <div class="panel panel-border panel-primary">
-        <div class="panel-heading"> 
-          <h3 class="panel-title"><i class="fa fa-home"></i> Seluruh Transaksi</h3> 
-        </div> 
-        <div class="panel-body"> 
-          <h2><?= $count ?> <span style="font-size: 22px; font-family: Times">Transaksi</span></h2> 
-        </div> 
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-home"></i> Seluruh Transaksi</h3>
+        </div>
+        <div class="panel-body">
+          <h2><?= $count ?> <span style="font-size: 22px; font-family: Times">Transaksi</span></h2>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-

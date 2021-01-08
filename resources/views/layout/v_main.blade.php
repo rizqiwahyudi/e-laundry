@@ -35,18 +35,18 @@
 
 <body>
   @if(Session::has('success'))
-                    
-    <script type="text/javascript">
-      Swal.fire(
-        'Success!!',
-        '{{ Session::get("success") }}',
-        'success'
-      )
-    </script>
-    @php
-      Session::forget('success');
-    @endphp
-    </div>
+
+  <script type="text/javascript">
+    Swal.fire(
+      'Success!!',
+      '{{ Session::get("success") }}',
+      'success'
+    )
+  </script>
+  @php
+  Session::forget('success');
+  @endphp
+  </div>
   @endif
   <!--==========================
   Header
@@ -173,34 +173,34 @@
                 <div class="form-group">
                   <input type="text" name="nama" class="form-control" id="name" placeholder="Masukkan Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required="" value="{{old('nama')}}" />
                   @if($errors->has('nama'))
-                    <script type="text/javascript">
-                      Swal.fire(
-                        'Error !',
-                        '{{ $errors->first("nama") }}',
-                        'error'
-                      )
-                    </script>
+                  <script type="text/javascript">
+                    Swal.fire(
+                      'Error !',
+                      '{{ $errors->first("nama") }}',
+                      'error'
+                    )
+                  </script>
                   @endif
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Masukkan Email" data-rule="email" data-msg="Please enter a valid email" required="" value="{{old('email')}}" />
                   @if($errors->has('email'))
-                    <script type="text/javascript">
-                      Swal.fire(
-                        'Error !',
-                        '{{ $errors->first("email") }}',
-                        'error'
-                      )
-                    </script>
+                  <script type="text/javascript">
+                    Swal.fire(
+                      'Error !',
+                      '{{ $errors->first("email") }}',
+                      'error'
+                    )
+                  </script>
                   @endif
                 </div>
                 <div class="form-group">
-                    <div class="stars">
-                      @for ($i = 5; $i > 0; $i--)
-                        <input class="star star-{{ $i }} form-control" id="star-{{ $i }}" type="radio" name="rating" value="{{ $i }}" data-rule="required" data-msg="Please enter your rating" required=""/>
-                        <label class="star star-{{ $i }}" for="star-{{ $i }}"></label>
-                      @endfor
-                        <!-- <input class="star star-4" id="star-4" type="radio" name="star" value="4" data-rule="required"/>
+                  <div class="stars">
+                    @for ($i = 5; $i > 0; $i--)
+                    <input class="star star-{{ $i }} form-control" id="star-{{ $i }}" type="radio" name="rating" value="{{ $i }}" data-rule="required" data-msg="Please enter your rating" required="" />
+                    <label class="star star-{{ $i }}" for="star-{{ $i }}"></label>
+                    @endfor
+                    <!-- <input class="star star-4" id="star-4" type="radio" name="star" value="4" data-rule="required"/>
                         <label class="star star-4" for="star-4"></label>
                         <input class="star star-3" id="star-3" type="radio" name="star" value="3" data-rule="required"/>
                         <label class="star star-3" for="star-3"></label>
@@ -208,27 +208,27 @@
                         <label class="star star-2" for="star-2"></label>
                         <input class="star star-1" id="star-1" type="radio" name="star" value="1" data-rule="required"/>
                         <label class="star star-1" for="star-1"></label> -->
-                        @if($errors->has('rating'))
-                          <script type="text/javascript">
-                            Swal.fire(
-                              'Error !',
-                              '{{ $errors->first("rating") }}',
-                              'error'
-                            )
-                          </script>
-                        @endif
-                    </div>
+                    @if($errors->has('rating'))
+                    <script type="text/javascript">
+                      Swal.fire(
+                        'Error !',
+                        '{{ $errors->first("rating") }}',
+                        'error'
+                      )
+                    </script>
+                    @endif
+                  </div>
                 </div>
                 <div class="form-group">
                   <textarea class="form-control" name="komen" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Masukkan Comment atau Pesan" required="">{{old('komen')}}</textarea>
                   @if($errors->has('komen'))
-                    <script type="text/javascript">
-                      Swal.fire(
-                        'Error !',
-                        '{{ $errors->first("komen") }}',
-                        'error'
-                      )
-                    </script>
+                  <script type="text/javascript">
+                    Swal.fire(
+                      'Error !',
+                      '{{ $errors->first("komen") }}',
+                      'error'
+                    )
+                  </script>
                   @endif
                 </div>
                 <div class="text-center">
@@ -244,7 +244,9 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>SakeraDev.ID</strong>. All Rights Reserved
+        &copy; Copyright <script>
+          document.write(new Date().getFullYear());
+        </script> <strong>SakeraDev.ID</strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- #footer -->

@@ -34,6 +34,20 @@
 </head>
 
 <body>
+  @if(Session::has('success'))
+                    
+    <script type="text/javascript">
+      Swal.fire(
+        'Success!!',
+        '{{ Session::get("success") }}',
+        'success'
+      )
+    </script>
+    @php
+      Session::forget('success');
+    @endphp
+    </div>
+  @endif
   <!--==========================
   Header
   ============================-->
@@ -217,22 +231,6 @@
                     </script>
                   @endif
                 </div>
-
-                @if(Session::has('success'))
-                    
-                    <script type="text/javascript">
-                      Swal.fire(
-                        'Success!!',
-                        '{{ Session::get("success") }}',
-                        'success'
-                      )
-                    </script>
-                    @php
-                      Session::forget('success');
-                    @endphp
-                  </div>
-                @endif
-
                 <div class="text-center">
                   <button type="submit" title="Send Message">Send Message</button>
                 </div>

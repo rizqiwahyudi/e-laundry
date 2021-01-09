@@ -147,7 +147,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="pull-left page-title">Aplikasi Loundry By Mr.Erko Bani</h4>
+                            <h4 class="pull-left page-title">Aplikasi Loundry By <b>SakeraDev.ID</b></h4>
                         </div>
                     </div>
 

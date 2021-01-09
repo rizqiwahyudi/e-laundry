@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/dashboard/absensi', function () {
+    return view('adminDashboard.v_absensi');
+});
+
 Route::get('/dashboard', function () {
     return view('adminDashboard.v_index');
 });

@@ -114,13 +114,13 @@
                 <div id="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="?page=home" class="waves-effect"><i class="md md-home"></i><span> Dashboard </span></a>
+                            <a href="{{ url('/dashboard') }}" class="waves-effect"><i class="md md-home"></i><span> Dashboard </span></a>
                         </li>
                         <li class="has_sub">
                             <a href="#" class="waves-effect"><i class="fa fa-user"></i> <span> Admin Menu </span> <span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="?page=karyawan">Karyawan</a></li>
-                                <li><a href="?page=master">Master Jenis Cucian</a></li>
+                                <li><a href="{{ url('/dashboard/karyawan') }}">Karyawan</a></li>
+                                <li><a href="{{ url('/dashboard/master') }}">Master Jenis Cucian</a></li>
                             </ul>
                         </li>
                         <li>

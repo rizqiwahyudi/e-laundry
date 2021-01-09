@@ -18,7 +18,10 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/dashboard/karyawan', function () {
-    return view('adminDashboard.v_karyawan');
+    return view('adminDashboard.karyawan.v_karyawan');
+});
+Route::get('/dashboard/karyawan/create', function () {
+    return view('adminDashboard.karyawan.v_tambah');
 });
 
 Route::get('/', 'PagesController@home');
@@ -30,20 +33,35 @@ Route::get('/dashboard/absensi', function () {
     return view('adminDashboard.v_absensi');
 });
 Route::get('/dashboard/konsumen', function () {
-    return view('adminDashboard.v_konsumen');
+    return view('adminDashboard.konsumen.v_konsumen');
+});
+Route::get('/dashboard/konsumen/create', function () {
+    return view('adminDashboard.konsumen.v_tambah');
 });
 Route::get('/dashboard/transaksi', function () {
-    return view('adminDashboard.v_transaksi');
+    return view('adminDashboard.transaksi.v_transaksi');
+});
+Route::get('/dashboard/transaksi/create', function () {
+    return view('adminDashboard.transaksi.v_tambah');
+});
+Route::get('/dashboard/transaksi/laporan', function () {
+    return view('adminDashboard.transaksi.v_laporan');
 });
 Route::get('/dashboard/riwayat-transaksi', function () {
     return view('adminDashboard.v_riwayatTransaksi');
 });
 Route::get('/dashboard/pengeluaran', function () {
-    return view('adminDashboard.v_pengeluaran');
+    return view('adminDashboard.pengeluaran.v_pengeluaran');
+});
+Route::get('/dashboard/pengeluaran/create', function () {
+    return view('adminDashboard.pengeluaran.v_tambah');
+});
+Route::get('/dashboard/pengeluaran/laporan', function () {
+    return view('adminDashboard.pengeluaran.v_laporan');
 });
 Route::get('/dashboard/master', function () {
-    return view('adminDashboard.v_master');
+    return view('adminDashboard.master.v_master');
 });
-
-
-
+Route::get('/dashboard/master/create', function () {
+    return view('adminDashboard.master.v_tambah');
+});

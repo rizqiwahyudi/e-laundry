@@ -60,7 +60,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="index.html" class="logo"><span>e-loundry</span></a>
+                    <a href="{{ url('/dashboard') }}" class="logo"><span>e-loundry</span></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->

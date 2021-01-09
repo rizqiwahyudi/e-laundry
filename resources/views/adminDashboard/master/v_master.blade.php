@@ -7,9 +7,10 @@
 
 <div class="container">
 
-	<h2>Data Master</h2> <hr style="margin-top: -10px;">
+	<h2>Data Master</h2>
+	<hr style="margin-top: -10px;">
 
-	<a href="?page=tambah_master"  class="btn btn-primary btn-sm">Tambah Master</a>
+	<a href="{{ url('/dashboard/master/create') }}" class="btn btn-primary btn-sm">Tambah Master</a>
 
 	<div class="table-responsive tbl-master">
 		<table class="table table-bordered table-hover">
@@ -24,7 +25,7 @@
 			</thead>
 
 			<tbody>
-				
+
 				<tr>
 					<td></td>
 					<td></td>
@@ -34,9 +35,9 @@
 						<a href="include/master/delete.php?id=" class="badge badge-danger">Delete</a>
 						<a href="index.php?page=editmaster&id=" class="badge badge-success">Edit</a>
 					</td>
-					</td>				
+					</td>
 				</tr>
-				
+
 			</tbody>
 		</table>
 	</div>

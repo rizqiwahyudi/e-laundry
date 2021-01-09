@@ -2,7 +2,10 @@
 <html>
 
 <head>
-  <title>Login</title>
+  <title>Login | Laundry Sehati</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="{{ asset('/assets/img/logo-laundry.png') }}" rel="icon">
+  <link href="{{ asset('/assets/img/logo-laundry.png') }}" rel="apple-touch-icon">
   <link rel="stylesheet" type="text/css" href="{{ asset('/assets/lib/login/bootstrap/css/bootstrap.min.css') }}" />
   <style type="text/css">
     @font-face {
@@ -171,7 +174,7 @@
 
                 <div class="col-md-12 text-center mt-3">
                   <p style="font-size: 14px; color: #999;">
-                    Anda Akan Masuk Kehalaman Login <b>Silahkan masukan username dan password yang</b> <b>Benar.</b>
+                    Anda Akan Masuk Kehalaman Dashboard <b>Silahkan masukan username dan password yang</b> <b>Benar.</b>
                   </p>
                 </div>
               </div>

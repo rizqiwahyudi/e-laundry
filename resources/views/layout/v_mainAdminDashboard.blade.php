@@ -114,25 +114,25 @@
                 <div id="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="?page=home" class="waves-effect"><i class="md md-home"></i><span> Dashboard </span></a>
+                            <a href="{{ url('/dashboard') }}" class="waves-effect"><i class="md md-home"></i><span> Dashboard </span></a>
                         </li>
                         <li class="has_sub">
                             <a href="#" class="waves-effect"><i class="fa fa-user"></i> <span> Admin Menu </span> <span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="?page=karyawan">Karyawan</a></li>
-                                <li><a href="?page=master">Master Jenis Cucian</a></li>
+                                <li><a href="{{ url('/dashboard/karyawan') }}">Karyawan</a></li>
+                                <li><a href="{{ url('/dashboard/master') }}">Master Jenis Cucian</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="index.php?page=absensi" class="waves-effect"><i class="fas fa-address-card"></i> <span> Absensi </span></a>
+                            <a href="{{ url('/dashboard/absensi') }}" class="waves-effect"><i class="fas fa-address-card"></i> <span> Absensi </span></a>
                         </li>
                         <li class="has_sub">
                             <a href="#" class="waves-effect"><i class="fas fa-shopping-cart"></i><span> Transaksi </span> <span class="pull-right"><i class="md md-add"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="?page=konsumen">Konsumen</a></li>
-                                <li><a href="?page=transaksi">Transaksi</a></li>
-                                <li><a href="?page=riwayat">Riwayat Transaksi</a></li>
-                                <li><a href="?page=pengeluran">Pengeluaran</a></li>
+                                <li><a href="{{ url('/dashboard/konsumen') }}">Konsumen</a></li>
+                                <li><a href="{{ url('/dashboard/transaksi') }}">Transaksi</a></li>
+                                <li><a href="{{ url('/dashboard/riwayat-transaksi') }}">Riwayat Transaksi</a></li>
+                                <li><a href="{{ url('/dashboard/pengeluaran') }}">Pengeluaran</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -147,7 +147,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h4 class="pull-left page-title">Aplikasi Loundry By Mr.Erko Bani</h4>
+                            <h4 class="pull-left page-title">Aplikasi Loundry By <b>SakeraDev.ID</b></h4>
                         </div>
                     </div>
 

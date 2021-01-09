@@ -6,10 +6,11 @@
 
 <div class="container">
 
-    <h2>Data Karyawan</h2> <hr style="margin-top: -10px;">
+    <h2>Data Karyawan</h2>
+    <hr style="margin-top: -10px;">
 
-    <a href="?page=tambah_karyawan" class="btn btn-primary btn-sm">Tambah Data Karyawan</a>
-    
+    <a href="{{ url('/dashboard/karyawan/create') }}" class="btn btn-primary btn-sm">Tambah Data Karyawan</a>
+
     <div class="table-responsive tbl-master">
         <table class="table table-bordered table-hover">
             <thead>
@@ -30,7 +31,7 @@
             </thead>
 
             <tbody>
-                
+
                 <tr>
                     <td></td>
                     <td></td>
@@ -54,7 +55,7 @@
                         <a href="index.php?page=editkaryawan&id=" class="badge badge-success">Edit</a>
                     </td>
                 </tr>
-                
+
             </tbody>
         </table>
     </div>

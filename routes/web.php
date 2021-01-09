@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard/absensi', function () {
-    return view('adminDashboard.v_absensi');
-});
-
 Route::get('/dashboard', function () {
     return view('adminDashboard.v_index');
 });
@@ -24,3 +20,8 @@ Route::get('/', 'PagesController@home');
 Route::get('/login', 'PagesController@login');
 Route::get('/', 'CommentController@index');
 Route::post('/', 'CommentController@store');
+
+
+Route::get('/dashboard/absensi', function () {
+    return view('adminDashboard.v_absensi');
+});

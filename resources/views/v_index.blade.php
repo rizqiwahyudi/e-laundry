@@ -421,7 +421,7 @@
               <h3>{{ $komen->nama }}</h3>
               <h4>
                 @foreach(range(1,5) as $i)
-                <span class="fa-stack" style="width:1em; letter-spacing: 4px;">
+                <span class="fa-stack" style="width:1em letter-spacing: 4px;">
                   <i class="far fa-2x fa-star fa-stack-2x"></i>
 
                   @if($komen->rating > 0)

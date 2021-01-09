@@ -22,6 +22,7 @@ Route::get('/', 'CommentController@index');
 Route::post('/', 'CommentController@store');
 
 
+
 Route::get('/dashboard/absensi', function () {
     return view('adminDashboard.v_absensi');
 });

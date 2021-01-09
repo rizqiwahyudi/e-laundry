@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/dashboard', function () {
     return view('adminDashboard.v_index');
 });
+
+
+
 Route::get('/', 'PagesController@home');
 Route::get('/login', 'PagesController@login');
 Route::get('/', 'CommentController@index');

@@ -29,3 +29,15 @@ Route::post('/', 'CommentController@store');
 Route::get('/dashboard/absensi', function () {
     return view('adminDashboard.v_absensi');
 });
+Route::get('/dashboard/konsumen', function () {
+    return view('adminDashboard.v_konsumen');
+});
+Route::get('/dashboard/transaksi', function () {
+    return view('adminDashboard.v_transaksi');
+});
+Route::get('/dashboard/riwayat-transaksi', function () {
+    return view('adminDashboard.v_riwayatTransaksi');
+});
+Route::get('/dashboard/pengeluaran', function () {
+    return view('adminDashboard.v_pengeluaran');
+});

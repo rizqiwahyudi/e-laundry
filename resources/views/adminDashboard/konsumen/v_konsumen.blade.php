@@ -9,7 +9,7 @@
     <h2>Data Konsumen</h2>
     <hr style="margin-top: -10px;">
 
-    <a href="?page=tambahkonsumen" class="btn btn-primary btn-sm">Tambah Data konsumen</a>
+    <a href="{{ url('/dashboard/konsumen/create') }}" class="btn btn-primary btn-sm">Tambah Data konsumen</a>
 
     <div class="table-responsive tbl-master">
         <table class="table table-bordered table-hover" id="myTable">

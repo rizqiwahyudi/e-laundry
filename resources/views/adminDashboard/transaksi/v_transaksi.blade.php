@@ -10,8 +10,8 @@
         <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-clock-o"></i> Data Transaksi Penjualan</h3>
             <div class="panel-body">
-                <a href="?page=tambah_transaksi" class="btn btn-primary btn-sm">Tambah Transaksi</a>
-                <a href="?page=laporan" class="btn btn-primary btn-sm">LAPORAN</a>
+                <a href="{{ url('/dashboard/transaksi/create') }}" class="btn btn-primary btn-sm">Tambah Transaksi</a>
+                <a href="{{ url('/dashboard/transaksi/laporan') }}" class="btn btn-primary btn-sm">LAPORAN</a>
 
                 <div class="table-responsive tbl-master">
                     <table class="table table-bordered table-hover" id="myTable">

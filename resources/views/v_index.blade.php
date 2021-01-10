@@ -417,7 +417,7 @@
 
             @foreach( $comments as $komen )
 
-              @if($loop->index == 10)
+              @if($loop->index == 5)
                 @break
               @endif
               <div class="testimonial-item">

@@ -14,4 +14,7 @@ class PagesController extends Controller
     {
     	return view('v_login');
     }
+    public function setup(){
+    	return view('v_setup');
+    }
 }

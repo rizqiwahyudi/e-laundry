@@ -110,10 +110,23 @@
       font-weight: bold;
     }
   </style>
+  <script src="{{ asset('/assets/js/sweetalert.js') }}"></script>
 </head>
 
 <body>
+@if(Session::has('success'))
 
+  <script type="text/javascript">
+    Swal.fire(
+      'Success!!',
+      '{{ Session::get("success") }}',
+      'success'
+    )
+  </script>
+  @php
+    Session::forget('success');
+  @endphp
+@endif
   <div class="container">
     <div class="row justify-content-center">
       <!-- <div class="col-md-2"></div> -->

@@ -46,7 +46,6 @@
   @php
   Session::forget('success');
   @endphp
-  </div>
   @endif
   <!--==========================
   Header

@@ -16,10 +16,29 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/setup', function () {
-    return view('v_setup');
+Route::middleware('cekRoleSet')->group(function(){
+    Route::get('/', 'PagesController@home');
+    Route::get('/', 'CommentController@index');
+    Route::post('/', 'CommentController@store');
+    Route::get('/login', 'PagesController@login');
 });
 
+Route::middleware('cekRoleSet2')->group(function(){
+    Route::get('/setup', 'PagesController@setup');
+    Route::post('setup', 'SetupController@store');
+});
+// PagesController
+
+// CommentController
+
+
+// SetupController
+
+
+
+// Route::get('/setup', function () {
+//     return view('v_setup');
+// });
 Route::get('/dashboard', function () {
     return view('adminDashboard.v_index');
 });
@@ -30,11 +49,6 @@ Route::get('/dashboard/karyawan', function () {
 Route::get('/dashboard/karyawan/create', function () {
     return view('adminDashboard.karyawan.v_tambah');
 });
-
-Route::get('/', 'PagesController@home');
-Route::get('/login', 'PagesController@login');
-Route::get('/', 'CommentController@index');
-Route::post('/', 'CommentController@store');
 
 Route::get('/dashboard/absensi', function () {
     return view('adminDashboard.v_absensi');
